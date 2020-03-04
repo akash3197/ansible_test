@@ -1,0 +1,20 @@
+---
+- hosts: all
+  tasks:
+    - name: Install apache
+      yum: 
+          name: httpd
+          state: present
+      become: yes
+      become_user: root
+    - name: Replace dummyfile
+      copy:
+           dest: /home/ansible/dummyfile
+           content: " Hi I am host {{ ansible_hostname }} and I run the linux kernel {{ ansible_kernel }}\n"
+    - name: Shell Module
+      shell: "cat /home/ansible/dummyfile"
+      register: dummy_file
+    - name: Output dummy_file var contents
+      debug:
+            msg: "{{ dummy_file.stdout_lines }}"  
+

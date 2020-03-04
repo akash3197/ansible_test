@@ -1,0 +1,51 @@
+---
+- name: Handlers
+  hosts: all
+  become: true
+  become_user: root
+#  gather_facts: no
+  tasks:
+    - name: Usage of remote_src
+      copy:
+           src: /abc/
+           dest: /tmp
+           state: empty
+#           remote_src: yes
+           directory_mode: yes
+    - name: install httpd
+      yum:
+          name: httpd
+          state: latest
+    - name: Start and enable httpd service
+      service:
+              name: httpd
+              state: started
+              enabled: true
+      notify:
+       - restart_httpd
+
+#    - name: Deliver html content
+#      become_user: ansible
+#     copy:
+#           src: /home/ansible/rolesmyvhost/files/html
+#           dest: /var/www/vhosts/{{ ansible_hostname }}
+#           src: abc
+#           dest: /var/www/vhosts/{{ ansible_hostname }}
+#            src: /home/ansible/ansible_tut/playbooks/sample.yml
+#           dest: /tmp/{{ ansible_hostname }}
+#           recurse: yes
+#      notify:
+#       - install_nginx
+
+# handlers for restarting httpd
+
+  handlers:
+   - name: restart_httpd
+     service:
+             name: httpd
+             state: restarted
+   - name: install_nginx
+     yum:
+         name: nginx
+         state: latest
+

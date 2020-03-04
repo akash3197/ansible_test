@@ -1,0 +1,11 @@
+---
+- hosts: all
+  name: User Module
+  become: true
+  become_user: root
+  tasks: 
+    - name: Delete the user
+      user:
+           name: johnd
+           state: absent
+           remove: yes

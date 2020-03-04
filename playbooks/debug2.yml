@@ -1,0 +1,14 @@
+---
+- name: Debug Example Uptime
+  hosts: web
+#  connection: local
+  tasks:
+    - name: Find Uptime
+      shell: /usr/bin/uptime
+      register: result
+ 
+    - name: Print debug message
+      debug:
+#            var: result
+            msg: "{{ result.stdout }}"
+            verbosity: 2

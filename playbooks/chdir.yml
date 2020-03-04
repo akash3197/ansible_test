@@ -1,0 +1,17 @@
+---
+- hosts: all
+  become: yes
+  become_user: root
+  tasks:
+    - name: task name
+      shell: touch foobar
+      args:
+           creates: foobar
+           chdir: /usr/lib
+
+
+#    - name: task name
+#  shell:
+#    cmd: touch foobar
+#    creates: foobar
+#    chdir: /usr/lib/foobar

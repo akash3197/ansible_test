@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+    - name: create multiple directories in a loop
+      file:
+           path: "$HOME/{{ item }}"
+           state: directory
+      loop:
+        - test1
+        - test2
+        - test3
+

@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+    - name: create multiple directories in a loop
+      file:
+           path: "/home/{{ ansible_user_id }}/test"
+           state: directory
+           mode: 0755
+           group: root
+           owner: root
+      become: yes
+

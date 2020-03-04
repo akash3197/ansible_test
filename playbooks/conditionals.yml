@@ -1,0 +1,34 @@
+---
+- name: Ansible Conditionals
+  hosts: all
+  become: yes
+  become_user: root
+  tasks:
+#    - name: Copy the vsftp rpm for CentOS 8
+#      copy:
+#           src: /home/ansible/ansible_tut/vsftpd-3.0.2-10.el7.x86_64.rpm
+#           dest: /tmp/
+#           owner: root
+#           group: root
+#           mode: 0777
+#       when: ansible_distribution == "CentOS" and ansible_distribution_major_version == '8'
+     - name: Install vsftp package on CentOS 8
+       yum:
+#           name: /tmp/vsftpd-3.0.2-10.el7.x86_64.rpm
+           name: vsftpd 
+           state: present
+       when: ansible_distribution == "CentOS" and ansible_distribution_major_version == '8'
+#     - name: Copy the vsftp rpm for CentOS 8
+#       copy: 
+#            src: /home/ansible/ansible_tut/vsftpd-2.2.2-11.el6.i686.rpm
+#            dest: /tmp/
+#            owner: root
+#            group: root
+#            mode: 0777
+#       when: ansible_distribution == "CentOS" and ansible_distribution_major_version == "8"
+     - name: Install vsftp package on CentOS 8
+       yum:
+#           name: /tmp/vsftpd-2.2.2-11.el6.i686.rpm
+           name: vsftpd
+           state: present
+

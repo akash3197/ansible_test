@@ -1,0 +1,18 @@
+---
+  - name: Playbook
+    hosts: all
+    become: yes
+    become_user: shruti
+    vars:
+     remote_dir: /tmp/facts.d
+#     facts_file: custom_fact
+    tasks:
+#      - name: ensure apache is at the latest version
+#       command: touch /tmp/file1.txt
+      - name: Creates the remote directory
+        file:
+         state: touch
+#        recurse: yes
+         path: "{{ remote_dir }}"
+#         mode: '0777'    
+

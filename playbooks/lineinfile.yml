@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: line insert
+      lineinfile:
+        path: /tmp/tet
+        line: 'HI'
+        insertbefore: BOF

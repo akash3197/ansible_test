@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+    - name: ensure file exists or not
+      file:
+           path: /home/ansible/test
+           state: touch
+
+# always changed because touch also modifies timestamp

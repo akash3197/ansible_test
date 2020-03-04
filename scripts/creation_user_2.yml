@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: true
+  become_user: root
+  vars:
+   password: root
+   username: tomy
+#   userid: usrid
+  tasks:
+    - name: User Creation
+      user: name="{{ username }}"
+
+

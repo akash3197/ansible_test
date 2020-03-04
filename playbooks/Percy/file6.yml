@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+    - name: ensure file exists or not
+      file:
+           path: /home/ansible/test
+           state: file
+
+#  this will give error because nothing like state: file instead state: touch

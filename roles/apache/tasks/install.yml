@@ -1,0 +1,3 @@
+---
+- name: Installatiion of httpd package
+  yum: name=httpd state=latest

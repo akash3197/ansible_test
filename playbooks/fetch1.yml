@@ -1,0 +1,11 @@
+---
+- hosts: all
+  name: using fetch module
+  become: yes
+  become_user: root
+  tasks:
+    - name: getting file from managed host
+      fetch:
+            src: /tmp/dummyfile
+            dest: /tmp/{{ ansible_hostname }}/
+

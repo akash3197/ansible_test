@@ -1,0 +1,16 @@
+---
+  - name: Playbook
+    hosts: all
+    become_user: root
+    vars:
+     Apache: httpd
+    tasks:
+      - name: ensure {{ Apache }} is at the latest version
+        yum:
+          name: httpd
+          state: present
+        become: yes
+      - name: starting httpd service
+        service: name="{{ Apache }}" state="started"
+        become: yes
+ 

@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: true
+  become_user: root
+  tasks:
+    - name: Create user
+      user:
+           name: akash
+           comment: Akash Modi
+           uid: 1010
+           append: yes
+           password: $6$mysecretsalt$FKKUBcVjbHASshod1GIRgwASOwKS03.ouxb6l74dOCwv/iyKPvTB60KQf/E9.XkpSBi3/BVbrt9ZqLc4pz2kn.
+           expires: 1422403387
+           update_password: on_create
+           
+

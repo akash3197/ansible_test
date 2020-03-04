@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+#    - name: Go to the folder
+#      command: chdir=/opt/tools/temp
+    - name: Go to the folder and execute command
+      command: chdir=/opt/tools/temp ls

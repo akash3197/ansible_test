@@ -1,0 +1,13 @@
+---
+-  hosts: all
+   become: yes
+   become_user: root
+   tasks: 
+     - name: Copying the file
+       copy: 
+         dest: /tmp/abc.txt
+         mode: 0777
+         owner: shruti
+         group: shruti
+         backup: yes
+         content: '# This file was moved to /etc/other.conf'            

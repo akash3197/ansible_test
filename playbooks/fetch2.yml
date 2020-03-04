@@ -1,0 +1,14 @@
+---
+- name: Run tasks on all hosts
+  hosts: "*"
+#  become: true
+#  become_user: root
+  tasks: 
+    - name: Ensure a file exists
+      file:
+           path: "/home/{{ ansible_user_id }}/dummyfile"
+           state: touch
+    - name: Fetch dummyfile
+      fetch:
+            src: "/home/{{ ansible_user_id }}/dummyfile"
+            dest: fetched

@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: true
+  become_user: root
+  vars:
+   password: root
+   username: Tommy
+#   userid: usrid
+   comments: Tommy H
+   group: shruti
+   sgroups: shruti
+  tasks:
+    - name: User Creation
+      user: name="{{ username }}" comment="{{ comments }}" password="{{ password }}" group="{{ shruti }}" groups="{{ shruti }}" append=yes

@@ -1,0 +1,16 @@
+---
+- name: Run tasks on all hosts
+  hosts: "*"
+#  become: true
+#  become_user: root
+  tasks:
+    - name: Ensure a file exists
+      copy:
+           dest: "/home/{{ ansible_user_id }}/dummyfile"
+           content: "{{ ansible_hostname }}"
+    - name: Fetch dummyfile
+      fetch:
+            src: "/home/{{ ansible_user_id }}/dummyfile"
+            dest: fetched/
+            flat: yes
+

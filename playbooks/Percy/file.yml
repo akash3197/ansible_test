@@ -1,0 +1,7 @@
+---
+- hosts: all
+  tasks:
+    - name: Ensure a directory exists
+      file:
+           path: /home/ansible/test
+           state: directory

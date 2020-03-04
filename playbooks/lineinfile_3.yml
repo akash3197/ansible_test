@@ -1,0 +1,9 @@
+---
+- hosts: all
+  tasks:
+    - name: Ansible insert a line before example
+      lineinfile:
+        path: /tmp/tet
+        line: '0.0.0.0 facebook.com'
+        insertbefore: xyz
+

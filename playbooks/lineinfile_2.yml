@@ -1,0 +1,8 @@
+---
+- hosts: all
+  tasks:
+    - name: Inserting a line after a pattern in Ansible example 
+      lineinfile:
+        path: /tmp/tet
+        line: alias ll='ls -lhA'
+        insertafter: file4

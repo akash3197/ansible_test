@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+    - name: create multiple directories in a loop
+      file:
+           path: $HOME/ansible/test
+           state: directory
+    - name: remove directory
+      file:
+           path: $HOME/ansible/test
+           state: absent
+

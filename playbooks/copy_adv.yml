@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: yes
+  become_user: root
+  tasks: 
+    - name: copying of files
+      copy:
+           content: '# This file 11was moved to /etc/other.conf'
+           dest: /tmp/tet
+           backup: yes
+
+
+
+
+
+

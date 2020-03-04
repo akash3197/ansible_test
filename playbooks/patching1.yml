@@ -1,0 +1,27 @@
+---
+- hosts: all
+  name: patching tutorial
+  become: yes
+  become_user: root
+  tasks:
+    - name: to check apache running or not
+      shell: if ps -eaf | grep -i "httpd" | grep -v grep > /dev/null; then echo 'processes running' ; else echo 'not running' ; fi
+      ignore_errors: true
+      register: check
+    - debug: msg=" {{ check.stdout }}"
+    - name: decision point to start patching
+      fail: msg="{{ ansible_hostname }} have running "
+      when: check.stdout == "processes running"
+    - name: Upgrade all packages on the server
+      yum:
+          name: tar
+          state: latest
+      when: check.stdout == "not running"
+      register: yum_update
+    - debug: msg="Kernel Patch {{ ansible_kernel }} has been updated on the server {{ ansible_hostname }}"
+      when: yum_update.rc == "0"
+
+    - debug: msg=" {{ check.stdout }}"
+
+
+

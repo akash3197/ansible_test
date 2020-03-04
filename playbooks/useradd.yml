@@ -1,0 +1,21 @@
+---
+-  hosts: all
+   name: Adding User
+   become: yes
+   become_user: root
+   vars:
+    # created with:
+    # python -c 'import crypt; print crypt.crypt("This is my Password", "$1$SomeSalt$")'
+    password: $6$uODXjMwPaYEKOnLL$M3DBhckWDPtimL54aryS.isHYrzXlkaRb/unCj2is3A0mieebgSN.Qru/akEmagVrm5NGR1p0KXMvdG3MM20g/
+   tasks: 
+     - name: Creating user
+       user: 
+         name: Akash
+         comment: Akash Modi
+         uid: 1010
+#         gid: 1010
+         group: shruti
+#         password: {{ password }} 
+#         update_password: on_create
+         shell: /bin/bash
+

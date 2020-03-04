@@ -1,0 +1,14 @@
+---
+-  hosts: all
+   become: yes
+   become_user: root
+   vars:
+    VIM: vim
+    Apache: httpd
+   tasks:
+    - name: Using Variables
+      yum: 
+       name: 
+        - "{{ VIM }}"
+        - "{{ Apache }}"
+       state: latest

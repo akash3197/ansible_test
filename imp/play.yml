@@ -1,0 +1,10 @@
+---
+- hosts: all
+
+#  vars_files:
+#    - abc
+
+  tasks:
+    - name: Do something as sudo
+      service: name=httpd state=restarted
+      become: yes

@@ -1,0 +1,23 @@
+---
+- hosts: all
+  become:  true
+  become_user: root
+  vars: 
+#    password: $6$mysecretsalt$FKKUBcVjbHASshod1GIRgwASOwKS03.ouxb6l74dOCwv/iyKPvTB60KQf/E9.XkpSBi3/BVbrt9ZqLc4pz2kn.
+    username: name
+    cmmts: comment    
+  tasks: 
+    - name: User exist
+      shell: id {{ username }}
+      register: user_exist
+      ignore_errors: true
+    - name: User Creation
+      user:
+           name: {{ username }}
+           comment: {{ cmmts }}
+           password: {{ password }} 
+      when: user_exist.rc != 0 and ansible_distribution = "CentOS"
+      register: user_creation
+    - debug: msg="User Name {{ username }} already existing on the {{ ansible_hostname }}
+      when: user_exist.rc == 0
+      

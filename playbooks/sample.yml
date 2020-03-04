@@ -1,0 +1,18 @@
+---
+- hosts: all
+  name: shruti
+  become: yes
+  become_user: root
+  tasks: 
+    - name: Uninstall VIM
+      yum: name="vim" state="absent"
+    - name: Stop httpd
+      service: name="httpd" state="stopped"
+    - name: Uninstall apache
+      yum: name="httpd" state="absent"
+    - name: Install apache
+      yum: name="httpd" state="latest"
+    - name: Starting apache
+      service: name="httpd" state="started"
+    - name: Enabling Apache
+      service: name="httpd" enabled="yes"

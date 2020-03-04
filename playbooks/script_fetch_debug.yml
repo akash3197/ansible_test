@@ -1,0 +1,21 @@
+---
+- hosts: all
+  tasks:
+    - name: Execution of performance scripts
+#      script: /home/sverma/ansible/nwr/adhoc_health/performance.sh
+      script: /home/ansible/script.sh
+      register: output
+      ignore_errors: true
+    - name: Fetching the health report
+      fetch:  
+#             src: /tmp/perflog/serverperf.log
+            src: /home/ansible/sh
+#      dest: /home/sverma/ansible/nwr/adhoc_health/details/healthreport-{{ inventory_hostname }}
+            dest: /tmp/{{ ansible_hostname }}/
+#            remote_src: yes
+            flat: yes
+      ignore_errors: true
+    - debug:
+            msg: "{{ output.stdout }}" 
+            msg: "Health report has been copied to /home/sverma/ansible/nwr/adhoc_health/deatils1"
+            msg: "{{ output.stdout }}"

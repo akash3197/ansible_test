@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: true
+  become_user: root
+  vars:
+   password: root
+   username: usernme
+#   userid: usrid
+   comments: cmmts
+   groupid: pid
+   sgroupid: sid
+  tasks:
+    - name: User Creation
+      user: name="{{ username }}" comment="{{ comments }}" password="{{ password }}" group="{{ pid }}" groups="{{ sid }}" append=yes

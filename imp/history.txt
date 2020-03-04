@@ -1,0 +1,1000 @@
+   73  ansible-doc yum
+   74  ansible-config host
+   75  ansible-config hosts
+   76  ansible-config hosts -c
+   77  ll
+   78  ls
+   79  ls -ltr
+   80  vi installing_vim.yml
+   81  ll
+   82  ansible-playbook installing_vim.yml -i /home/ansible/ansible_tut/hosts -K
+   83  ll
+   84  cd ansible_tut
+   85  ll
+   86  vi copy.yml
+   87  ansible-playbook copy.yml -i /home/ansible/ansible_tut/hosts -K
+   88  ll
+   89  vi copy.yml
+   90  ansible-playbook copy.yml -i /home/ansible/ansible_tut/hosts -K
+   91  vi copy.yml
+   92  ansible-playbook copy.yml -i /home/ansible/ansible_tut/hosts -K
+   93  ll
+   94  vi copy.yml
+   95  vi useradd.yml
+   96  ansible-playbook useradd.yml -i /home/ansible/ansible_tut/hosts -K
+   97  vi useradd.yml
+   98  ansible-playbook useradd.yml -i /home/ansible/ansible_tut/hosts -K
+   99  vi useradd.yml
+  100  python -c 'import crypt; print crypt.crypt("This is my Password", "$1$SomeSalt$")'
+  101  python --version
+  102  ll
+  103  cd ansible_tut/
+  104  ll
+  105  vi apache.yml
+  106  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  107  vi apache.yml 
+  108  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  109  vi apache.yml 
+  110  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  111  vi apache.yml 
+  112  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  113  vi apache.yml 
+  114  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  115  ll
+  116  cat hosts 
+  117  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts all
+  118  ll
+  119  vi apache.yml 
+  120  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts all
+  121  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  122  vi apache.yml 
+  123  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  124  vi apache.yml 
+  125  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  126  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  127  vi apache.yml 
+  128  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  129  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  130  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  131  ll
+  132  vi apache.yml 
+  133  visudo
+  134  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  135  sudo visudo
+  136  cat apache.yml 
+  137  vi apache.yml 
+  138  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  139  cat apache.yml 
+  140  vi apache.yml 
+  141  history
+  142  vi apache.yml 
+  143  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  144  vi apache.yml 
+  145  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  146  vi apache.yml 
+  147  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+  148  cat apache.yml 
+  149  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  150  cat apache.yml 
+  151  vi apache.yml 
+  152  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  153  vi apache.yml 
+  154  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  155  vi apache.yml 
+  156  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  157  vi apache.yml 
+  158  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  159  vi apache.yml 
+  160  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  161  vi apache.yml 
+  162  vi /etc/ansible/ansible.cfg 
+  163  vi apache.yml 
+  164  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  165  vi apache.yml 
+  166  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  167  vi apache.yml 
+  168  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  169  vi apache.yml 
+  170  ll
+  171  vi host
+  172  ansible-playbook apache.yml -i /home/ansible/ansible_tut/host
+  173  ansible-playbook apache.yml -i /home/ansible/ansible_tut/host -K
+  174  vi apache.yml 
+  175  ansible-playbook apache.yml -i /home/ansible/ansible_tut/host -K
+  176  cat host
+  177  ansible-playbook apache.yml -i /home/ansible/ansible_tut/host -K
+  178  ssh 192.168.1.15
+  179  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  180  ll
+  181  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  182  vi apache.yml 
+  183  ll
+  184  cp apache.yml file.yml
+  185  l
+  186  ll
+  187  vi file.yml 
+  188  cat file.yml 
+  189  ansible-playbook file.yml hosts
+  190  ansible-playbook file.yml -i /home/ansible/ansible_tut/hosts
+  191  ansible-playbook file.yml -i /home/ansible/ansible_tut/hosts -K
+  192  vi file.yml 
+  193  ansible-playbook file.yml -i /home/ansible/ansible_tut/hosts 
+  194  ansible-playbook file.yml -i /home/ansible/ansible_tut/hosts -K
+  195  cat file.yml 
+  196  ll
+  197  ll
+  198  cd ansible_tut/
+  199  ll
+  200  vi sample.yml
+  201  ansible-playbook sample.yml -i /home/ansible/ansible_tut/hosts -K
+  202  ansible-doc service
+  203  vi sample.yml
+  204  ansible-playbook sample.yml -i /home/ansible/ansible_tut/hosts -K
+  205  ansible-doc copy
+  206  ansible-doc useradd
+  207  cd /usr/lib/python3.6/site-packages/ansible/modules
+  208  ll
+  209  cd commands
+  210  ll
+  211  cd ,,
+  212  cd ..
+  213  cd system/
+  214  ll
+  215  vi user.py
+  216  ansible-doc debug
+  217  cd 
+  218  ll
+  219  cd ansible_tut
+  220  ll
+  221  mv apache.yml copy.yml file.yml playbooks/
+  222  ll
+  223  mv installing_vim.yml python.yml sample.yml useradd.yml playbooks/
+  224  ll
+  225  cat host
+  226  cat hosts
+  227  cd playbooks/
+  228  ll
+  229  cat ansible_tut
+  230  cat installing_vim.yml
+  231  vi using_vars.yml
+  232  ansible-playbook -C using_vars.yml -i /home/ansible/ansible_tut/hosts -K
+  233  vi using_vars.yml
+  234  ansible-playbook -C using_vars.yml -i /home/ansible/ansible_tut/hosts -K
+  235  vi using_vars.yml
+  236  ansible-playbook -C using_vars.yml -i /home/ansible/ansible_tut/hosts -K
+  237  vi using_vars.yml
+  238  ansible-playbook -C using_vars.yml -i /home/ansible/ansible_tut/hosts -K
+  239  ansible-playbook using_vars.yml -i /home/ansible/ansible_tut/hosts -K
+  240  ll
+  241  cp using_vars.yml using_vars1.yml 
+  242  vi using_vars1.yml 
+  243  ansible-playbook using_vars1.yml -i /home/ansible/ansible_tut/hosts -K
+  244  vi using_vars1.yml 
+  245  ansible-playbook using_vars1.yml -i /home/ansible/ansible_tut/hosts -K
+  246  vi using_vars1.yml 
+  247  ll
+  248  cat apache.yml 
+  249  vi using_vars1.yml 
+  250  ansible-playbook using_vars1.yml -i /home/ansible/ansible_tut/hosts -K
+  251  vi using_vars1.yml 
+  252  ansible-playbook using_vars1.yml -i /home/ansible/ansible_tut/hosts -K
+  253  vi using_vars1.yml 
+  254  ll
+  255  cat apache.yml 
+  256  vi apache.yml 
+  257  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts
+  258  vi apache.yml 
+  259  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  260  vi apache.yml 
+  261  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  262  ansible -i /home/ansible/ansible_tut/hosts -m setup
+  263  ansible -i /home/ansible/ansible_tut/hosts -m setup all
+  264  ls -ltr
+  265  cd 
+  266  cd /tmp
+  267  ll
+  268  cd
+  269  cd /
+  270  ll
+  271  cd home
+  272  ll
+  273  cd ansible
+  274  ll
+  275  cd ..
+  276  cd shruti
+  277  su -
+  278  ll
+  279  cd ansible_tut/
+  280  ll
+  281  cp installing_vim.yml python.yml
+  282  vi python.yml 
+  283  ansible-playbook python.yml.yml -i /home/ansible/ansible_tut/hosts -K
+  284  ansible-playbook python.yml -i /home/ansible/ansible_tut/hosts -K
+  285  vi python.yml 
+  286  ansible-playbook python.yml -i /home/ansible/ansible_tut/hosts -K
+  287  ll
+  288  vi useradd.yml
+  289  ansible-playbook useradd.yml -i /home/ansible/ansible_tut/hosts -K
+  290  vi useradd.yml 
+  291  ansible-playbook useradd.yml -i /home/ansible/ansible_tut/hosts -K
+  292  vi useradd.yml 
+  293  ansible-playbook useradd.yml -i /home/ansible/ansible_tut/hosts -K
+  294  vi useradd.yml 
+  295  ansible-playbook useradd.yml -i /home/ansible/ansible_tut/hosts -K
+  296  vi useradd.yml 
+  297  ansible-playbook useradd.yml -i /home/ansible/ansible_tut/hosts -K
+  298  i useradd.yml 
+  299  vi useradd.yml 
+  300  ansible-playbook useradd.yml -i /home/ansible/ansible_tut/hosts -K
+  301  vi useradd.yml
+  302  ansible-playbook useradd.yml -i /home/ansible/ansible_tut/hosts -K
+  303  ll
+  304  ansible-playbook --syntax-check apache.yml 
+  305  ansible-playbook -C apache.yml -i /home/ansible/ansible_tut/hosts
+  306  ansible-playbook -C apache.yml -i /home/ansible/ansible_tut/hosts -K
+  307  vi apache.yml 
+  308  ll
+  309  vi installing_vim.yml 
+  310  vi sample.yml 
+  311  ansible-playbook -C installing_vim.yml -i /home/ansible/ansible_tut/hosts -K
+  312  vi installing_vim.yml 
+  313  ansible-playbook -C sample.yml -i /home/ansible/ansible_tut/hosts -K
+  314  mkdir playbooks
+  315  cd playbooks/
+  316  ll
+  317  vi gather/yml
+  318  vi gather.yml
+  319  ansible-playbook gather.yml -i /home/ansible/ansible_tut/hosts
+  320  ansible-playbook gather.yml -i /home/ansible/ansible_tut/hosts -vvv
+  321  ssh ansible@192.168.1.15
+  322  ssh ansible@192.168.1.19
+  323  ll
+  324  cd ansible_tut/
+  325  ll
+  326  vi hosts
+  327  ssh-copy-id -i ~/.ssh/id_rsa.pub 192.168.1.19
+  328  ssh ansible@192.168.1.19
+  329  ll
+  330  ansible-doc file
+  331  history 
+  332  history  | grep -ir "setup"
+  333  ansible -i /home/ansible/ansible_tut/hosts all -m setup 
+  334  ansible -m setup -i /home/ansible/ansible_tut/hosts all  
+  335  cd playbooks/
+  336  ll
+  337  vi conditionals.yml
+  338  vi handlers.yml
+  339  ansible-playbook handlers.yml -i /home/ansible/ansible_tut/hosts -K
+  340  ll
+  341  ls -ltr
+  342  vi handlers_1.yml
+  343  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  344  vi handlers_1.yml
+  345  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  346  vi handlers_1.yml
+  347  vi handlers.yml
+  348  vi handlers_1.yml
+  349  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  350  cat handlers_1.yml 
+  351  vi handlers_1.yml
+  352  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  353  vi handlers_1.yml
+  354  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  355  vi handlers_1.yml
+  356  cd /home
+  357  cd /etc/ansible
+  358  ll
+  359  cd roles
+  360  ll
+  361  vi handlers_1.yml
+  362  cd /home
+  363  cd ansible/
+  364  cd ansible_tut/
+  365  ll
+  366  cd playbooks
+  367  ll
+  368  vi handlers_1.yml 
+  369  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  370  vi handlers_1.yml 
+  371  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  372  vi handlers_1.yml 
+  373  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  374  vi handlers_1.yml 
+  375  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  376  vi handlers_1.yml 
+  377  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  378  vi handlers_1.yml 
+  379  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  380  vi handlers_1.yml 
+  381  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  382  ll
+  383  cat handlers_1.yml 
+  384  vim handlers_1.yml 
+  385  vi handlers_1.yml 
+  386  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  387  vi handlers_1.yml 
+  388  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  389  vi handlers_1.yml 
+  390  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  391  vi handlers_1.yml 
+  392  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  393  vi handlers_1.yml 
+  394  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  395  vi handlers_1.yml 
+  396  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  397  vi handlers_1.yml 
+  398  vi handlers.yml 
+  399  vi handlers_1.yml 
+  400  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  401  vi handlers_1.yml 
+  402  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  403  vi handlers_1.yml 
+  404  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  405  vi handlers_1.yml 
+  406  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  407  vi copy_adv.yml
+  408  ansible-playbook copy_adv.yml -i /home/ansible/ansible_tut/hosts -K
+  409  vi copy_adv.yml
+  410  ansible-playbook copy_adv.yml -i /home/ansible/ansible_tut/hosts -K
+  411  vi copy_adv.yml
+  412  ansible-playbook copy_adv.yml -i /home/ansible/ansible_tut/hosts -K
+  413  vi copy_adv.yml
+  414  ansible-playbook copy_adv.yml -i /home/ansible/ansible_tut/hosts -K
+  415  vi copy_adv.yml
+  416  ansible-playbook copy_adv.yml -i /home/ansible/ansible_tut/hosts -K
+  417  vi copy_adv.yml
+  418  ansible-playbook copy_adv.yml -i /home/ansible/ansible_tut/hosts -K
+  419  vi copy_adv.yml
+  420  ansible-playbook copy_adv.yml -i /home/ansible/ansible_tut/hosts -K
+  421  ansible-doc lineinfile
+  422  vi lineinfile.yml
+  423  ansible-playbook lineinfile.yml -i /home/ansible/ansible_tut/hosts 
+  424  vi lineinfile_1.yml 
+  425  ansible-playbook lineinfile_1.yml -i /home/ansible/ansible_tut/hosts 
+  426  vi lineinfile_2.yml 
+  427  ansible-playbook lineinfile_2.yml -i /home/ansible/ansible_tut/hosts 
+  428  vi lineinfile_2.yml 
+  429  ansible-playbook lineinfile_2.yml -i /home/ansible/ansible_tut/hosts 
+  430  vi lineinfile_3.yml
+  431  ansible-playbook lineinfile_3.yml -i /home/ansible/ansible_tut/hosts 
+  432  vi lineinfile_3.yml
+  433  ansible-playbook lineinfile_3.yml -i /home/ansible/ansible_tut/hosts 
+  434  ll
+  435  ls -ltr
+  436  cat copy_adv.yml
+  437  vi handlers_1.yml
+  438  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  439  vi handlers_1.yml
+  440  cd /
+  441  ll
+  442  mkdir abc
+  443  sudo mkdir abc
+  444  ll
+  445  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  446  cd home
+  447  ll
+  448  cd ansible
+  449  ll
+  450  cd ansible_tut
+  451  cd pla
+  452  cd playbooks/
+  453  ll
+  454  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  455  vi handlers_1.yml
+  456  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  457  vi handlers_1.yml
+  458  ansible-playbook handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  459  cd ..
+  460  ansible-playbook /home/ansible/ansible_tut/playbooks/handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  461  cd playbooks/
+  462  ll
+  463  vi handlers_1.yml
+  464  cd /
+  465  ll
+  466  cd abc
+  467  ll
+  468  touch fle1.txt
+  469  sudo touch fle1.txt
+  470  ansible-playbook /home/ansible/ansible_tut/playbooks/handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  471  vi /home/ansible/ansible_tut/playbooks/handlers_1.yml
+  472  ansible-playbook /home/ansible/ansible_tut/playbooks/handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  473  ll
+  474  rm -rf file1.txt
+  475  ll
+  476  rm -rf fle1.txt 
+  477  sudo rm -rf fle1.txt 
+  478  ll
+  479  ansible-playbook /home/ansible/ansible_tut/playbooks/handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  480  ll
+  481  cd ..
+  482  ll
+  483  cd home/
+  484  ll
+  485  cd ansible/
+  486  ll
+  487  cd ansible_tut/
+  488  ll
+  489  cd playbooks/
+  490  ll
+  491  ls -ltr
+  492  vi handlers_1.yml 
+  493  ansible-playbook /home/ansible/ansible_tut/playbooks/handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  494  ll
+  495  vi handlers_1.yml 
+  496  sudo cd /abc
+  497  ll
+  498  cd 
+  499  cd /
+  500  ll
+  501  cd abc
+  502  ll
+  503  cd
+  504  cd ansible_tut/
+  505  ll
+  506  cd playbooks
+  507  ll
+  508  vi handlers_1.yml
+  509  ansible-playbook /home/ansible/ansible_tut/playbooks/handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  510  vi handlers_1.yml
+  511  ansible-playbook /home/ansible/ansible_tut/playbooks/handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  512  vi handlers_1.yml
+  513  ansible-playbook /home/ansible/ansible_tut/playbooks/handlers_1.yml -i /home/ansible/ansible_tut/hosts -K
+  514  ll
+  515  vi useradd.yml
+  516  vi creation_user.yml
+  517  ansible-playbook creation_user.yml -i /home/ansible/ansible_tut/hosts -K
+  518  vi creation_user.yml
+  519  ansible-playbook creation_user.yml -i /home/ansible/ansible_tut/hosts -K
+  520  vi creation_user.yml
+  521  ansible-playbook creation_user.yml -i /home/ansible/ansible_tut/hosts -K
+  522  vi creation_user.yml
+  523  cd ..
+  524  mkdir scripts
+  525  cd scripts/
+  526  ll
+  527  vi script.sh
+  528  cd ..
+  529  cd playbooks/
+  530  ll
+  531  vi creation_user.yml 
+  532  cp creation_user.yml creation_user1.yml 
+  533  ll
+  534  vi creation_user.yml
+  535  cp -pr creation_user creation_user_2.yml
+  536  cp -pr creation_user.yml creation_user_2.yml
+  537  ll
+  538  ls -ltr
+  539  vi creation_user_2.yml 
+  540  pwd
+  541  ll
+  542  ls -ltr
+  543  vi creation_user_2.yml 
+  544  vi creation_user_1.yml
+  545  ll
+  546  vi creation_user1.yml
+  547  vi creation_user2.yml
+  548  ll
+  549  vi creation_user_2.yml
+  550  ansible-playbook creation_user_2.yml -i /home/ansible/ansible_tut/hosts -K
+  551  cd /tmp
+  552  ll
+  553  cat tet
+  554  rm tet
+  555  ll
+  556  cd 
+  557  ll
+  558  cd ansible_tut/
+  559  ll
+  560  cd playbooks/
+  561  ll
+  562  ansible-playbook creation_user_2.yml -i /home/ansible/ansible_tut/hosts -K
+  563  vi creation_user_2.yml
+  564  ansible-playbook creation_user_2.yml -i /home/ansible/ansible_tut/hosts -K
+  565  vi user_del.yml
+  566  ansible-playbook user_del.yml -i /home/ansible/ansible_tut/hosts -K
+  567  pip install passlib
+  568  um install pip
+  569  yum install pip
+  570  sudo yum install pip
+  571  sudo pip install passlib
+  572  sudo yum install passlib
+  573  pyhon3 --version
+  574  python3 --version
+  575  python3.6 --version
+  576  python3* --version
+  577  cd /usr/lib
+  578  ll
+  579  cd python3.6
+  580  ll
+  581  cd site-packages/
+  582  ll
+  583  pip install passlib
+  584  cd pip
+  585  ll
+  586  cd utils
+  587  ll
+  588  cd
+  589  yum install version
+  590  sudo yum install python
+  591  sudo yum install python3
+  592  python --version
+  593  python3 --version
+  594  pip install passlib
+  595  sudo yum install pip
+  596  sudo yum install python3.6
+  597  cd /usr/lib
+  598  ll
+  599  cd python3.6
+  600  ll
+  601  cd site-packages
+  602  ll
+  603  pip
+  604  echo %path%
+  605  sudo apt-get install python-pip
+  606  sudo yum install python-pip
+  607  history
+  608  sudo yum install passlib
+  609  sudo pip install passlib
+  610  ll
+  611  mkdir encrypt_password
+  612  mv abc.py def.py password.py pqr.py xyz.py 
+  613  ll
+  614  mv abc.py def.py password.py pqr.py xyz.py encrypt_password/
+  615  ll
+  616  cd encrypt_password/
+  617  ll
+  618  ls -ltr
+  619  ls -lu
+  620  ls lc
+  621  ls -lc
+  622  cd
+  623  ll
+  624  cd ansible_tut/
+  625  ll
+  626  cd playbooks/
+  627  ll
+  628  vi apache.yml 
+  629  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  630  vi apache.yml 
+  631  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  632  vi apache.yml 
+  633  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  634  vi apache.yml 
+  635  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  636  vi apache.yml 
+  637  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  638  vi apache.yml 
+  639  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  640  systemctl list-units --type service
+  641  systemctl list-unit-files
+  642  systemctl | more
+  643  systemctl | grep "apache2"
+  644  netstat -pnltu
+  645  man netstat
+  646  vi /etc/services
+  647  systemctl service sshd
+  648  systemctl status sshd
+  649  systemctl is-active sshd
+  650  systemctl is-active httpd
+  651  chkconfig --list
+  652  journalctl
+  653  journalctl --list-boots
+  654  vi /etc/systemd
+  655  vi /etc
+  656  cd /etc/systemd
+  657  ll
+  658  vi journald.conf
+  659  timedatetl status
+  660  timedatectl status
+  661  date
+  662  watch date
+  663  cd
+  664  ansible-docs service
+  665  ansible-docs services
+  666  history
+  667  ansible-doc service
+  668  cd ansible_tut/
+  669  cd playbooks/
+  670  vi apache.yml 
+  671  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  672  sudo systemctl status httpd.service
+  673  vi apache.yml 
+  674  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  675  vi apache.yml 
+  676  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K
+  677  vi apache.yml 
+  678  python3 --version
+  679  import utils
+  680  python3
+  681  sed -n 3,6p sample.yml 
+  682  sed 3,5d sample.yml 
+  683  cat sample.yml 
+  684  sed 2,5d sample.yml 
+  685  cat sample.yml 
+  686  sed 2,5d sample.yml 
+  687  sed -n '2-3p' sample.yml 
+  688  sed $d sample.yml 
+  689  sed sd sample.yml 
+  690  sed '29-34d' sample.yml 
+  691  sed G sample.yml 
+  692  sed '/yes/a "This is new line with text after match"' sample.yml 
+  693  sed -e 's/.*/testing sed &/' sample.yml 
+  694  sed 's/\([^:]*\).*/\1/' /etc/passwd
+  695  sed -i --follow-symlinks 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/sysconfig/selinux
+  696  ip route show
+  697  ps -eaf
+  698  ps -e
+  699  ps aux
+  700  ps -ef -f
+  701  ps -f -u
+  702  ps -f -u ansible
+  703  ansible-doc debug
+  704  cd ansible_tut/
+  705  ll
+  706  cd playbooks/
+  707  ll
+  708  vi debug.yml
+  709  ansible-playbook debug.yml -i /home/ansible/ansible_tut/hosts 
+  710  vi /etc/hosts
+  711  vi debug1.yml 
+  712  ansible-playbook debug1.yml -i /home/ansible/ansible_tut/hosts 
+  713  vi debug1.yml 
+  714  ansible-playbook debug1.yml -i /home/ansible/ansible_tut/hosts 
+  715  vi debug1.yml 
+  716  ansible-playbook debug1.yml -i /home/ansible/ansible_tut/hosts 
+  717  vi debug1.yml 
+  718  ansible-playbook debug1.yml -i /home/ansible/ansible_tut/hosts 
+  719  vi debug1.yml 
+  720  ansible-playbook debug1.yml -i /home/ansible/ansible_tut/hosts 
+  721  vi debug1.yml 
+  722  vi debug.yml
+  723  vi debug1.yml 
+  724  vi debug2.yml 
+  725  ansible-playbook debug2.yml -i /home/ansible/ansible_tut/hosts 
+  726  vi debug2.yml 
+  727  ansible-playbook debug2.yml -i /home/ansible/ansible_tut/hosts 
+  728  ansible-playbook debug2.yml -i /home/ansible/ansible_tut/hosts -v
+  729  vi /etc/ansible/ansible.cfg 
+  730  ansible-playbook debug2.yml -i /home/ansible/ansible_tut/hosts -vv
+  731  ansible-playbook debug2.yml -i /home/ansible/ansible_tut/hosts -vvv
+  732  vi debug2.yml 
+  733  ansible-playbook debug2.yml -i /home/ansible/ansible_tut/hosts -v
+  734  ansible-playbook debug2.yml -i /home/ansible/ansible_tut/hosts -vv
+  735  ansible-playbook debug2.yml -i /home/ansible/ansible_tut/hosts -vvv
+  736  vi register.yml
+  737  ansible-playbook register.yml -i /home/ansible/ansible_tut/hosts -vvv
+  738  ansible-playbook register.yml -i /home/ansible/ansible_tut/hosts
+  739  vi register.yml
+  740  ip a
+  741  ping 192.168.1.19
+  742  vi register.yml
+  743  vi register1.yml
+  744  ansible-playbook register1.yml -i /home/ansible/ansible_tut/hosts
+  745  ci /etc/
+  746  cd /etc
+  747  ll
+  748  vi services | services
+  749  vi services | more
+  750  ll
+  751  su - root
+  752  clear
+  753  ll
+  754  cd ansible_tut/
+  755  ll
+  756  cd playbooks/
+  757  ll
+  758  cat debug2.yml 
+  759  vi debug2.yml 
+  760  vi patching.yml 
+  761  ll
+  762  ls -ltr
+  763  vi register.yml
+  764  ansible-playbook register.yml -i /home/ansible/ansible_tut/hosts
+  765  vi register.yml
+  766  ansible-playbook register.yml -i /home/ansible/ansible_tut/hosts
+  767  vi register.yml
+  768  ansible-playbook register.yml -i /home/ansible/ansible_tut/hosts
+  769  vi register.yml
+  770  ansible-playbook register.yml -i /home/ansible/ansible_tut/hosts
+  771  vi register.yml
+  772  ansible-playbook register.yml -i /home/ansible/ansible_tut/hosts
+  773  ll
+  774  vi fetch.yml
+  775  vi fetch1.yml
+  776  ansible-playbook fetch.yml -i /home/ansible/ansible_tut/hosts
+  777  ansible-playbook fetch.yml -i /home/ansible/ansible_tut/hosts -K
+  778  cd ..
+  779  ll
+  780  vi hosts
+  781  cd playbooks/
+  782  ll
+  783  ansible-playbook fetch1.yml -i /home/ansible/ansible_tut/hosts -K
+  784  s -lt
+  785  ls -ltr
+  786  cp -p register.yml  error.yml
+  787  vi error.yml 
+  788  ansible-playbook error.yml -i /home/ansible/ansible_tut/hosts
+  789  vi error.yml 
+  790  ansible-playbook error.yml -i /home/ansible/ansible_tut/hosts
+  791  ls -ltr
+  792  vi patching.yml 
+  793  vi error.yml 
+  794  ansible-playbook error.yml -i /home/ansible/ansible_tut/hosts -K
+  795  vi error.yml 
+  796  ansible-playbook error.yml -i /home/ansible/ansible_tut/hosts -K
+  797  vi error.yml 
+  798  ls -ltr
+  799  vi register1.yml 
+  800  ansible-playbook register1.yml -i /home/ansible/ansible_tut/hosts -K
+  801  vi register1.yml 
+  802  ansible-playbook register1.yml -i /home/ansible/ansible_tut/hosts -K
+  803  vi register1.yml 
+  804  ansible-playbook register1.yml -i /home/ansible/ansible_tut/hosts -K
+  805  vi register1.yml 
+  806  ansible-playbook register1.yml -i /home/ansible/ansible_tut/hosts -K
+  807  vi register1.yml 
+  808  vi register.yml
+  809  ls -ltr
+  810  vi register.yml 
+  811  ansible-playbook register.yml -i /home/ansible/ansible_tut/hosts 
+  812  vi register.yml 
+  813  cat register.yml 
+  814  vi register.yml 
+  815  ls -ltr
+  816  ll
+  817  ls -ltr
+  818  vi register_debug.yml
+  819  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts 
+  820  vi register_debug.yml
+  821  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts 
+  822  vi register_debug.yml
+  823  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts 
+  824  vi register_debug.yml
+  825  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts 
+  826  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  827  vi register_debug.yml
+  828  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  829  vi register_debug.yml
+  830  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  831  vi register_debug.yml
+  832  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  833  vi register_debug.yml
+  834  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  835  vi register_debug.yml
+  836  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  837  vi register_debug.yml
+  838  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  839  vi register_debug.yml
+  840  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  841  vi register_debug.yml
+  842  ansible-playbook register_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  843  vi register_debug.yml
+  844  ls -ltr
+  845  vi script_fetch_debug.yml
+  846  ll
+  847  vi debug4.yml
+  848  ansible-playbook debug4.yml -i /home/ansible/ansible_tut/hosts 
+  849  vi debug4.yml
+  850  ansible-playbook debug4.yml -i /home/ansible/ansible_tut/hosts 
+  851  vi debug4.yml
+  852  ll
+  853  vi patching.yml 
+  854  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts 
+  855  vi patching.yml 
+  856  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts 
+  857  vi patching.yml 
+  858  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts 
+  859  vi patching.yml 
+  860  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts 
+  861  vi patching.yml 
+  862  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts 
+  863  vi patching.yml 
+  864  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts 
+  865  vi patching.yml 
+  866  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts 
+  867  vi patching.yml 
+  868  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts 
+  869  vi patching.yml 
+  870  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts 
+  871  vi patching.yml 
+  872  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts 
+  873  ansible-playbook patching.yml -i /home/ansible/ansible_tut/hosts -K
+  874  ansible-doc yum
+  875  cp -pr patching.yml patching111.yml 
+  876  vi patching111.yml 
+  877  ansible-playbook patching111.yml -i /home/ansible/ansible_tut/hosts -K
+  878  vi patching111.yml 
+  879  ansible-playbook patching111.yml -i /home/ansible/ansible_tut/hosts -K
+  880  vi patching111.yml 
+  881  ansible-playbook patching111.yml -i /home/ansible/ansible_tut/hosts -K
+  882  vi patching111.yml 
+  883  ansible-playbook patching111.yml -i /home/ansible/ansible_tut/hosts -K
+  884  vi patching111.yml 
+  885  ansible-playbook patching111.yml -i /home/ansible/ansible_tut/hosts -K
+  886  vi patching111.yml 
+  887  ansible-playbook patching111.yml -i /home/ansible/ansible_tut/hosts -K
+  888  vi patching111.yml 
+  889  ansible-playbook patching111.yml -i /home/ansible/ansible_tut/hosts -K
+  890  vi patching111.yml 
+  891  ansible-playbook patching111.yml -i /home/ansible/ansible_tut/hosts -K
+  892  vi patching111.yml 
+  893  ansible-playbook patching111.yml -i /home/ansible/ansible_tut/hosts -K
+  894  vi patching111.yml 
+  895  ansible-playbook patching111.yml -i /home/ansible/ansible_tut/hosts -K
+  896  vi patching111.yml 
+  897  ip a
+  898  ssh-copy-id -i ~/.ssh/id_rsa.pub ansible@192.168.1.19
+  899  ssh-copy-id -i ~/.ssh/id_rsa.pub 192.168.1.19
+  900  l
+  901  ll
+  902  cd /home
+  903  ll
+  904  clear
+  905  cd ansible/
+  906  ll
+  907  cd ansible_tut/
+  908  ll
+  909  cd playbooks
+  910  ll
+  911  ls -ltr
+  912  ansible all -i /home/ansible/ansible_tut/hosts, -m debug -a "msg={{ 'mypassword' | password_hash('sha512', 'mysecretsalt') }}"
+  913  ansible all -i /home/ansible/ansible_tut/hosts, -m debug -a "msg={{ 'mypassword' | password_hash('sha512', 'my') }}"
+  914  pip install passlib
+  915  pip3 install passlib
+  916  python -c "from passlib.hash import sha512_crypt; import getpass; print(sha512_crypt.using(rounds=5000).hash(getpass.getpass()))"
+  917  python3 -c "from passlib.hash import sha512_crypt; import getpass; print(sha512_crypt.using(rounds=5000).hash(getpass.getpass()))"
+  918  encrypt
+  919  sudo yum install encrypt
+  920  ls -ltr
+  921  vi script_fetch_debug.yml
+  922  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  923  cat script_fetch_debug.yml 
+  924  q
+  925  vi script_fetch_debug.yml
+  926  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  927  vi script_fetch_debug.yml
+  928  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  929  vi script_fetch_debug.yml
+  930  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  931  vi script_fetch_debug.yml
+  932  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K
+  933  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K 
+  934  vi script_fetch_debug.yml
+  935  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K 
+  936  vi script_fetch_debug.yml
+  937  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K 
+  938  vi script_fetch_debug.yml
+  939  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K 
+  940  cat script_fetch_debug.yml 
+  941  vi script_fetch_debug.yml
+  942  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K 
+  943  vi script_fetch_debug.yml
+  944  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K 
+  945  vi script_fetch_debug.yml
+  946  ls -ltr
+  947  vi script_fetch_debug.yml
+  948  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K 
+  949  vi script_fetch_debug.yml
+  950  ansible-playbook script_fetch_debug.yml -i /home/ansible/ansible_tut/hosts -K 
+  951  ls -ltr
+  952  vi user.yml
+  953  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K 
+  954  vi user.yml
+  955  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K -vv
+  956  vi user.yml
+  957  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K -vv
+  958  vi user.yml
+  959  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K -vv
+  960  vi user.yml
+  961  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K -vv
+  962  vi user.yml
+  963  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K -vv
+  964  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K 
+  965  vi user.yml
+  966  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K 
+  967  vi user.yml
+  968  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K 
+  969  vi user.yml
+  970  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K 
+  971  vi user.yml
+  972  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K 
+  973  vi user.yml
+  974  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K 
+  975  vi user.yml
+  976  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K 
+  977  vi user.yml
+  978  ansible-playbook user.yml -i /home/ansible/ansible_tut/hosts -K 
+  979  cd ..
+  980  ll
+  981  cd
+  982  ll
+  983  vi abc.yml
+  984  ls -ltr
+  985  ansible-vault encrypt_password abc.yml 
+  986  ansible-vault encrypt abc.yml 
+  987  ls -ltr
+  988  ansible-vault encrypt abc.yml 
+  989  cat abc.yml 
+  990  ansible-vault view abc.yml 
+  991  ansible-vault edit abc.yml 
+  992  ansible-vault decrypt abc.yml 
+  993  cat abc.yml 
+  994  ll
+  995  rm abc.yml 
+  996  cp ./ansible_tut/playbooks/apache.yml .
+  997  ls -ltr
+  998  vi apache.yml 
+  999  ls -ltr
+ 1000  vi apache.yml 
+ 1001  rm script.sh 
+ 1002  ll
+ 1003  ansible-vault encrypt apache.yml 
+ 1004  cat apache.yml 
+ 1005  ls -ltr
+ 1006  ll
+ 1007  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts 
+ 1008  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts --ask-vault-pass
+ 1009  ll
+ 1010  vi abc
+ 1011  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts --vault-password-file abc 
+ 1012  ll
+ 1013  history
+ 1014  ll
+ 1015  ansible-vault decrypt apache.yml 
+ 1016  cat apache.yml 
+ 1017  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts --password-file abc
+ 1018  ansible --help
+ 1019  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts --become-pass-file
+ 1020  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -k
+ 1021  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -k -K
+ 1022  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -k 
+ 1023  ansible --help
+ 1024  ll
+ 1025  vi abc 
+ 1026  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts --key-file abc
+ 1027  ll
+ 1028  chmod 400 abc
+ 1029  ll
+ 1030  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts --key-file abc
+ 1031  vi abc 
+ 1032  chmod 600 abc
+ 1033  ll
+ 1034  vi abc 
+ 1035  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts --key-file abc
+ 1036  ll
+ 1037  vi abc 
+ 1038  vi apache.yml 
+ 1039  cat a
+ 1040  cat abc 
+ 1041  ansible-vault encrypt abc
+ 1042  vi apache.yml 
+ 1043  a
+ 1044  ll
+ 1045  vi def
+ 1046  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K --vault-password-file=def
+ 1047  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts --sudo --vault-password-file=def
+ 1048  vi apache.yml 
+ 1049  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts --sudo --vault-password-file=def
+ 1050  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts -K --vault-password-file=def
+ 1051  vi play.yml
+ 1052  ansible-playbook play.yml -i /home/ansible/ansible_tut/hosts --sudo --vault-password-file=def
+ 1053  ansible-playbook play.yml -i /home/ansible/ansible_tut/hosts -K --vault-password-file=def
+ 1054  ll
+ 1055  vi abc 
+ 1056  ansible-vault decrypt abc
+ 1057  vi abc 
+ 1058  ansible-vault encrypt abc
+ 1059  ansible-playbook play.yml -i /home/ansible/ansible_tut/hosts -K --vault-password-file=def
+ 1060  ll
+ 1061  ansible-vault decrypt abc
+ 1062  vi abc 
+ 1063  ansible-vault encrypt abc
+ 1064  ansible-playbook play.yml -i /home/ansible/ansible_tut/hosts --vault-password-file=def
+ 1065  vi play.yml 
+ 1066  ansible-playbook apache.yml -i /home/ansible/ansible_tut/hosts --vault-password-file=def
+ 1067  ll
+ 1068  vi abc 
+ 1069  history
+ 1070  vi play.yml 
+ 1071  ansible-playbook play.yml -i /home/ansible/ansible_tut/hosts --vault-password-file=def
+ 1072  history > history.txt

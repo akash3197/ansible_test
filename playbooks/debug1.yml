@@ -1,0 +1,27 @@
+---
+- name: Debug Example with Loop
+  hosts: all
+  connection: local
+#  gather_facts: no
+  tasks:
+    - name: Find Server
+      debug:
+            msg: "{{ item.name }} is {{ item.cpu }}"
+      with_items:
+        - name: machine1
+          cpu: 2.4GHz
+          memory: 2MB
+          disk: 100GB
+          network: 10Mbps
+        - name: machine2
+          cpu: 3GHz
+          memory: 1MB
+          disk: 500GB
+          network: 40Mbps
+        - name: machine3
+          cpu: 1.7GHz
+          memory: 4MB
+          disk: 200GB
+          network: 100Mbps
+      loop_control:
+                  label: "{{ item.name }} {{ item.cpu }} {{ item.memory }}"

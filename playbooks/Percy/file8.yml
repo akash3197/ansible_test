@@ -1,0 +1,12 @@
+---
+- hosts: all
+  tasks:
+    - name: ensure file exists or not
+      file:
+           path: /home/ansible/test
+           state: touch
+    - name: remove the file
+      file:
+           path: /home/ansible/test
+           state: absent
+

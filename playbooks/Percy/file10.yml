@@ -1,0 +1,20 @@
+---
+- hosts: all
+  tasks:
+    - name: ensure file exists or not
+      file:
+           path: /home/ansible/test
+           state: touch
+    - name: create a symlink to a test file
+      file:
+           src: /home/ansible/test
+           dest: /home/ansible/test_link
+           state: link
+    - name: Remove the symlink and file
+      file:
+           path: "$HOME/{{ item }}"
+           state: absent
+      loop: 
+        - test
+        - test_link
+

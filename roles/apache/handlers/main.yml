@@ -1,0 +1,4 @@
+---
+# handlers file for /home/ansible/ansible_tut/roles/apache
+- name: restart apache
+  service: name=httpd state=restarted

@@ -1,0 +1,28 @@
+---
+- hosts: all
+  name: patching tutorial
+  become: yes
+  become_user: root
+  tasks:
+    - name: to check apache running or not
+      shell: if ps -eaf | grep -i "httpd" | grep -v grep > /dev/null; then echo 'processes running' ; else echo 'not running' ; fi
+      ignore_errors: true
+      register: check
+    - debug: msg=" {{ check.stdout }}"
+    - name: decision point to start patching
+      fail: msg="{{ ansible_hostname }} have running "
+      when: check.stdout == "processes running"
+    - name: Upgrade all packages on the server
+      yum:
+          name: Kernel
+          state: latest
+      when: check.stdout == "not running"
+      register: yum_update
+    - debug: msg="Kernel Patch {{ ansible_kernel }} has been updated on the server {{ ansible_hostname }}"
+      when: yum_update.rc == 0
+
+    - name: Check if reboot required after kernel update
+      shell: kernel_new=$(rpm -qa --last kernel| head -l|awk '{print $1}'| sed 's/kernel-//g'); kernel_now=$(uname -r); if [[ $kernel_new != $kernel-now ]]; then echo "reboot is required" ; else echo "reboot not required:" ; fi
+      ignore_errors: true
+      register: reboot_check
+    - debug: msg="{{ reboot_check.stdout }}"

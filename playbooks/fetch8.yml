@@ -1,0 +1,28 @@
+---
+- name: Run tasks on all hosts
+  hosts: "*"
+#  become: true
+#  become_user: root
+  tasks:
+    - name: Ensure a file exists
+      copy:
+           dest: "/home/{{ ansible_user_id }}/{{ item }}"
+           content: "{{ ansible_hostname }}"
+      loop:
+        - dummyfile1
+        - dummyfile2
+    - name: Fetch dummyfile
+      fetch:
+            src: "/home/{{ ansible_user_id }}/{{ item }}"
+            dest: fetched/{{ inventory_hostanme }}
+            flat: yes/true
+      loop:
+        - dummyfile1
+        - dummyfile2
+
+
+
+# dest: fetched/{{ inventory_hostanme }}/
+# dest: fetched/dummyfile.{{ inventory_hostanme }}
+
+# More than one managed host
